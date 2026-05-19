@@ -1,19 +1,11 @@
 from langchain_community.vectorstores import FAISS
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
-import google.generativeai as genai
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
-
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+from langchain_community.embeddings import HuggingFaceEmbeddings
 
 
-# CREATE VECTOR STORE
 def create_vector_store(chunks):
-
-    embeddings = GoogleGenerativeAIEmbeddings(
-        model="models/embedding-001"
+    # FREE embeddings (no API key needed)
+    embeddings = HuggingFaceEmbeddings(
+        model_name="sentence-transformers/all-MiniLM-L6-v2"
     )
 
     vectorstore = FAISS.from_texts(
@@ -24,9 +16,6 @@ def create_vector_store(chunks):
     return vectorstore
 
 
-# SEARCH RELEVANT CHUNKS
-def get_relevant_chunks(vectorstore, question):
-
-    docs = vectorstore.similarity_search(question)
-
-    return docs
+def get_relevant_chunks(vectorstore, query, k=3):
+    docs = vectorstore.similarity_search(query, k=k)
+    return [doc.page_content for doc in docs]
