@@ -8,9 +8,9 @@ from helper import get_pdf_text, get_text_chunks
 from vectorstore import create_vector_store, get_relevant_chunks
 from llm import get_answer
 
-st.set_page_config("PDF Chatbot", layout="wide")
+st.set_page_config("RAG-Based PDF Chatbot", layout="wide")
 
-st.title(" AI PDF Chatbot (RAG System)")
+st.title("RAG-Based PDF Chatbot")
 
 
 # UPLOAD PDF
