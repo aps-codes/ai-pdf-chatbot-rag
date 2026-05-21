@@ -18,15 +18,16 @@ Ask questions from any PDF using AI. Upload a document, ask a question in plain 
 
 ## Preview
 
+## Preview
 
 ### Home Screen
-![Home](assets/home.png)
+![Home](assets/home.jpg)
 
 ### Upload Screen
-![Upload](assets/upload.png)
+![Upload](assets/upload.jpg)
 
 ### Chat Screen
-![Chat](assets/chat.png)
+![Chat](assets/chat.jpg)
 
 ---
 
