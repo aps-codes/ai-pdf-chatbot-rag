@@ -18,21 +18,15 @@ Ask questions from any PDF using AI. Upload a document, ask a question in plain 
 
 ## Preview
 
+
 ### Home Screen
+![Home](assets/home.png)
 
-![Home Screen](assets/home.jpg)
+### Upload Screen
+![Upload](assets/upload.png)
 
----
-
-### PDF Uploaded Successfully
-
-![PDF Upload](assets/upload.jpg)
-
----
-
-### AI Response from PDF
-
-![AI Response](assets/chat.jpg)
+### Chat Screen
+![Chat](assets/chat.png)
 
 ---
 
