@@ -16,6 +16,26 @@ Ask questions from any PDF using AI. Upload a document, ask a question in plain 
 
 ---
 
+## Preview
+
+### Home Screen
+
+![Home Screen](assets/home.jpg)
+
+---
+
+### PDF Uploaded Successfully
+
+![PDF Upload](assets/upload.jpg)
+
+---
+
+### AI Response from PDF
+
+![AI Response](assets/chat.jpg)
+
+---
+
 ## Tech Stack
 
 | Layer | Technology |
