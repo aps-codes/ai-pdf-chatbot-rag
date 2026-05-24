@@ -3,7 +3,7 @@
 Answers questions from any uploaded PDF using Retrieval-Augmented Generation.  
 Upload a document → ask in plain English → get answers sourced strictly from that file.
 
-**Live Demo:** Coming Soon
+**Live Demo:** (https://aps-rag-chatbot.streamlit.app)
 
 ---
 
